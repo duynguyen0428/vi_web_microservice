@@ -2,21 +2,23 @@ var mailer = require("nodemailer");
 var xoauth2 = require('xoauth2');
 
 var email = require("emailjs/email");
-function sendemail() {
+const config = require('../config/credential');
+
+module.exports.sendEmail = function sendemail(recepient,subject,content) {
     // Use Smtp Protocol to send Email
     var smtpTransport = mailer.createTransport({
         service: "gmail",
         auth: {
-                user: "@gmail.com",
-                pass: "xxxxxxx"
+                user: config.credentials.username,
+                pass: config.credentials.access_password
         }
     });
 
     var mail = {
-        from: "Duy Nguyen <@gmail.com>",
-        to: "@yahoo.com",
-        subject: "Send Email Using Node.js",
-        text: "Node.js New world for me",
+        from: "no-rely <no-reply@mail.com>",
+        to: recepient,
+        subject: subject,
+        text: content,
         html: "<b>Node.js New world for me</b>"
     }
 
