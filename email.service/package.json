@@ -1,0 +1,25 @@
+{
+  "name": "email.service",
+  "version": "1.0.0",
+  "description": "email service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duynguyen0428/vi_web_microservice.git"
+  },
+  "author": "Duy Nguyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duynguyen0428/vi_web_microservice/issues"
+  },
+  "homepage": "https://github.com/duynguyen0428/vi_web_microservice#readme",
+  "dependencies": {
+    "emailjs": "^2.2.0",
+    "nodemailer": "^4.6.8",
+    "npm": "^6.4.1",
+    "xoauth2": "^1.2.0"
+  }
+}
