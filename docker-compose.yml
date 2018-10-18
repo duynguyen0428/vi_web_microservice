@@ -13,6 +13,15 @@ services:
     networks:
       - nodeapp-network
 
+  email.service:
+    container_name: email.service
+    restart: always
+    build: ./email.service
+    ports:
+      - "3001:3001"
+    networks:
+      - nodeapp-network
+
   mongo2:
     container_name: mongo2
     image: mongo
