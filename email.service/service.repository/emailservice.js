@@ -9,8 +9,8 @@ module.exports.sendEmail = function sendemail(recepient,subject,content) {
     var smtpTransport = mailer.createTransport({
         service: "gmail",
         auth: {
-                user: config.credentials.username,
-                pass: config.credentials.access_password
+            user: config.config.credentials.username,
+            pass: config.config.credentials.access_password
         }
     });
 
@@ -48,4 +48,3 @@ module.exports.sendEmail = function sendemail(recepient,subject,content) {
     // }, function (err, message) { console.log(err || message); });
 }
 
-sendemail();
