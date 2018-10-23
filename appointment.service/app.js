@@ -9,20 +9,16 @@ var mongoose = require('mongoose');
 var index = require('./routes/index');
 
 var isProduction = process.env.ENV === "Production" ? true : false;
-console.log('env: ' + isProduction);
-var mongoserver = 'mongodb://localhost:27017/webapp';
-mongoose.connect(mongoserver, { useNewUrlParser: true })
-mongoose.set({ debug: true });
-// Connect to mongodb
-// if(isProduction){
-//   var mongoserver = process.env.MONGODB_DB_HOST;
-//   mongoose.connect(mongoserver, { useNewUrlParser: true })
-//   mongoose.set({ debug: true });
-// }else{
-//   var mongoserver = 'mongodb://localhost:27017/webapp';
-//   mongoose.connect(mongoserver, { useNewUrlParser: true })
-//   mongoose.set({ debug: true });
-// }
+//Connect to mongodb
+if(isProduction){
+  var mongoserver = process.env.MONGODB_DB_HOST;
+  mongoose.connect(mongoserver, { useNewUrlParser: true })
+  mongoose.set({ debug: true });
+}else{
+  var mongoserver = 'mongodb://mongo2:27017/webapp';
+  mongoose.connect(mongoserver, { useNewUrlParser: true })
+  mongoose.set({ debug: true });
+}
 
 
 
