@@ -10,8 +10,10 @@ services:
       - mongo2
     depends_on:
       - mongo2
-    networks:
-      - nodeapp-network
+    environment:
+      WAIT_HOSTS: mongo2:27017
+    # networks:
+    #   - nodeapp-network
 
   email.service:
     container_name: email.service
@@ -19,19 +21,19 @@ services:
     build: ./email.service
     ports:
       - "3001:3001"
-    networks:
-      - nodeapp-network
+    # networks:
+    #   - nodeapp-network
 
   mongo2:
     container_name: mongo2
     image: mongo
     volumes:
-      - ./data:/data/db
-    # ports:
-    #   - "27017:27017"
-    networks:
-      - nodeapp-network
+      - ./data/db:/data/db
+    ports:
+      - "27017:27017"
+    # networks:
+    #   - nodeapp-network
 
-networks:
-  nodeapp-network:
-    driver: bridge
+# networks:
+#   nodeapp-network:
+#     driver: bridge
