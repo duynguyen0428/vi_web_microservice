@@ -9,7 +9,7 @@ router.get('/',(req,res) => {
         }
     })
 })
-.get('/scheduledate',(req,res)=>{
+.get('/:scheduledate',(req,res)=>{
     var scheduledate = req.params.scheduledate;
     appointmentRepo.FindbyDate(scheduledate,(err,appts)=>{
         if(err) handlerError(err,res);
