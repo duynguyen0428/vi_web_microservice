@@ -15,11 +15,10 @@ if(isProduction){
   mongoose.connect(mongoserver, { useNewUrlParser: true })
   mongoose.set({ debug: true });
 }else{
-  var mongoserver = 'mongodb://mongo2:27017/webapp';
+  var mongoserver = 'mongodb://mongodb:27017/webapp';
   mongoose.connect(mongoserver, { useNewUrlParser: true })
   mongoose.set({ debug: true });
 }
-
 
 
 var app = express();
