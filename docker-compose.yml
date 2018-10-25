@@ -23,12 +23,24 @@ services:
       - "3001:3001"
     # networks:
     #   - nodeapp-network
+  customer.service:
+    container_name: customer.service
+    restart: always
+    build: ./customer.service
+    ports:
+      - "5001:5001"
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    environment:
+      WAIT_HOSTS: mongodb:27017
 
   mongodb:
     container_name: mongodb
     image: mongo
-    volumes:
-      - ./data/db:/data/db
+    # volumes:
+    #   - ./data/db:/data/db
     ports:
       - "27017:27017"
     # networks:

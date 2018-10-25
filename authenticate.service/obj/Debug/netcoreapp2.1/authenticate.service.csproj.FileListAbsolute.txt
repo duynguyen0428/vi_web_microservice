@@ -1,0 +1,14 @@
+E:\Development\microservice\vi_web_app\authenticate.service\bin\Debug\netcoreapp2.1\authenticate.service.deps.json
+E:\Development\microservice\vi_web_app\authenticate.service\bin\Debug\netcoreapp2.1\authenticate.service.runtimeconfig.json
+E:\Development\microservice\vi_web_app\authenticate.service\bin\Debug\netcoreapp2.1\authenticate.service.runtimeconfig.dev.json
+E:\Development\microservice\vi_web_app\authenticate.service\bin\Debug\netcoreapp2.1\authenticate.service.dll
+E:\Development\microservice\vi_web_app\authenticate.service\bin\Debug\netcoreapp2.1\authenticate.service.pdb
+E:\Development\microservice\vi_web_app\authenticate.service\obj\Debug\netcoreapp2.1\authenticate.service.csproj.CoreCompileInputs.cache
+E:\Development\microservice\vi_web_app\authenticate.service\obj\Debug\netcoreapp2.1\authenticate.service.RazorAssemblyInfo.cache
+E:\Development\microservice\vi_web_app\authenticate.service\obj\Debug\netcoreapp2.1\authenticate.service.RazorAssemblyInfo.cs
+E:\Development\microservice\vi_web_app\authenticate.service\obj\Debug\netcoreapp2.1\authenticate.service.AssemblyInfoInputs.cache
+E:\Development\microservice\vi_web_app\authenticate.service\obj\Debug\netcoreapp2.1\authenticate.service.AssemblyInfo.cs
+E:\Development\microservice\vi_web_app\authenticate.service\obj\Debug\netcoreapp2.1\authenticate.service.RazorTargetAssemblyInfo.cache
+E:\Development\microservice\vi_web_app\authenticate.service\obj\Debug\netcoreapp2.1\authenticate.service.dll
+E:\Development\microservice\vi_web_app\authenticate.service\obj\Debug\netcoreapp2.1\authenticate.service.pdb
+E:\Development\microservice\vi_web_app\authenticate.service\obj\Debug\netcoreapp2.1\authenticate.service.csprojResolveAssemblyReference.cache
